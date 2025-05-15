@@ -103,5 +103,10 @@ class doubleLinkList{
                 cout <, "\nList is empty" << endl;
                 return;
             }
+
+            node *currentNode = START;
+            cout << "\nRecords in ascending order of roll number are:\n";
+            int 1 = 0;
+            while (currentNode != NULL)
         }
 };
