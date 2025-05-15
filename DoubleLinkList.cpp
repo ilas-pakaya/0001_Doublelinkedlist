@@ -69,5 +69,14 @@ class doubleLinkList{
             cin >> rollNo;
 
             Node *current = START;
+
+            while (current != NULL && current -> nomhs != rollNo)
+                current = current -> next;
+
+            if (current == NULL)
+            {
+                cout << "\nRecord not found" << endl;
+                return;
+            }
         }
 };
