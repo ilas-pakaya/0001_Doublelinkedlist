@@ -92,6 +92,9 @@ class doubleLinkList{
                 if (current -> next != NULL)
                     current -> next -> prev = current -> prev;
             }
-            
+            delete current;
+            cout << "\nRecord with roll number" << rollNO << "deleted" << endl;
         }
+
+        void
 };
