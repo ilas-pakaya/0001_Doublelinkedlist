@@ -96,5 +96,12 @@ class doubleLinkList{
             cout << "\nRecord with roll number" << rollNO << "deleted" << endl;
         }
 
-        void
+        void traverse()
+        {
+            if (START == NULL)
+            {
+                cout <, "\nList is empty" << endl;
+                return;
+            }
+        }
 };
