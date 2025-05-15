@@ -78,5 +78,20 @@ class doubleLinkList{
                 cout << "\nRecord not found" << endl;
                 return;
             }
+
+            if (current == START)
+            {
+                START = current -> next;
+                if (START != NULL)
+                    START -> prev = NULL;
+            }
+
+            else
+            {
+                current -> prev -> next = current -> next;
+                if (current -> next != NULL)
+                    current -> next -> prev = current -> prev;
+            }
+            
         }
 };
