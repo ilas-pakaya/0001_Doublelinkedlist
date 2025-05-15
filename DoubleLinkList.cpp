@@ -35,6 +35,18 @@ class doubleLinkList{
                 if(START != NULL)
                    START -> prev = newNode;
                 newNode -> prev = NULL;
+                return;
+            }
+            node *current = START;
+            while (current -> next != NULL && current -> next -> nomhs < nim)
+            {
+                current = current -> next;
+            }
+
+            if (current -> next != NULL && nim == current -> next -> nomhs)
+            {
+                cout << "\nDuplicate roll number not allowed" << endl;
+                return;
             }
         }
 };
